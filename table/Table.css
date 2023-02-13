@@ -1,0 +1,18 @@
+h1{
+    color: Blue;
+}
+.container table tr td strong{
+    width: 180px;
+    color: red;
+  }
+  .container table tr td {
+    width: 170px;
+
+  }
+  .college table tr td {
+    width: 170px;
+  }
+  .college table tr td strong {
+    width: 170px;
+    color: red;
+  }
