@@ -1,0 +1,52 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+ </head>
+ <link rel="stylesheet" href="Form.css">
+ <center><h1>Candidate Detail</h1></center>
+ <body>
+    <div>
+        <form action="/action_page.php">
+            <div class="class1">
+                FIRST-NAME*:<input type="text" name="MyName"  placeholder="Enter your First-name" required>
+            </div><br>
+            <div class="class2">
+                LAST-NAME*: <input type="text" name="MyRole"  placeholder="Enter yourLast-name" required>
+            </div><br>
+            <div class="class3">
+                <fieldset>
+                <legend>GENDER*:</legend>
+                <input type="radio" name="gender" required>MALE
+                <input type="radio" name="gender" required>FEMALE
+                </fieldset>
+            </div><br>
+            <div class="class4">
+                ADDRESS*: <textarea name="message" ></textarea>
+            </div><br>
+            <div class="class5">
+                E-mail*: <input type="email" name="Myemail" placeholder="Enter your e-mail"required >
+            </div><br>
+        
+            <div class="class6">
+                <fieldset>
+                <p>Choose any two City for Exam*:</p>
+                Ahmedabad<input type="checkbox" name="Mycheck">
+                Delhi<input type="checkbox" name="Mycheck">
+                Pune<input type="checkbox" name="Mycheck">
+                Goa<input type="checkbox" name="Mycheck">
+                Gandhinagar<input type="checkbox" name="Mycheck">
+            </fieldset>
+            </div><br>
+            <div class="class7">
+              <center>  <input type="submit" value="SUBMIT"></center>
+            </div>
+        </form><br>
+       <fieldset>
+        <p><strong>NOTE:</strong> if you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+    </fieldset>
+ </body>
+ </html>

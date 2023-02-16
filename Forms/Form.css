@@ -1,0 +1,28 @@
+body{
+    background-image: url("https://ak4.picdn.net/shutterstock/videos/1485724/thumb/1.jpg");
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+}
+.class1 input {
+    margin-left: 60px;
+    
+}
+.class2 input {
+    margin-left: 60px;
+    
+}
+.class5 input {
+    margin-left: 100px;
+    
+}
+.class4 textarea{
+margin-left: 80px;
+}
+.class7 input{
+     background-color: blue;
+     color: aliceblue;
+}
+
+h1{
+    color: red;
+}
