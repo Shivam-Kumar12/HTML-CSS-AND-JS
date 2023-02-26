@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media queries</title>
+    <style>
+       .navbar{
+        background: black;
+        color: azure;
+        height: 45px;
+        text-align: center;
+
+       }
+       .navbar ul li{
+        padding:10px 20px;
+        display:inline-block;
+        list-style: none;
+        text-decoration:none;
+        font-size: 22px;
+        
+       }
+       @media screen and (max-width:1540px) {
+        body{
+               background-color: red;
+        }
+       }
+       @media screen and (max-width:1200px) {
+        body{
+               background-color:yellow;
+        }               
+       }
+       @media screen and (max-width:800px) {
+        body{
+               background-color:green;
+        }
+       }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Skill</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
