@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=ē, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment-1</title>
+</head>
+<body>
+    <div class="triangle" id="rotated">
+      <p>Shivam</p>
+    </div>
+
+    <button id="rotate" onclick="rotateImage()">
+        Rotate 
+    </button>
+      
+    <script type="text/javascript">
+    const rotated = document.getElementById('rotated');
+// Variable to hold the current angle of rotation
+let rotation =0;
+// How much to rotate the image at a time
+const angle = 90;
+function rotateImage() {
+  // Ensure angle range of 0 to 359 with "%" operator,
+  // e.g., 450 -> 90, 360 -> 0, 540 -> 180, etc.
+  rotation = (rotation + angle) % 360;
+  rotated.style.transform = `rotate(${rotation}deg)`;
+}
+  
+        
+       
+    </script>
+</body>
+</html>
