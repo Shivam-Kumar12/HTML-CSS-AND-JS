@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OTP Verification</title>
+</head>
+<body>
+  <form>
+    <label for="phone">Phone number:</label>
+    <input type="text" id="phone" name="phone">
+    <br>
+    <button type="button" onclick="sendOTP()">Send OTP</button>
+    <br>
+    <label for="otp">OTP:</label>
+    <input type="text" id="otp" name="otp">
+    <br>
+    <button type="button" onclick="verifyOTP()">Verify OTP</button>
+  </form>
+
+  <script>
+    function generateOTP(length) {
+      const chars = '0123456789';
+      let result = '';
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * chars.length);
+        result += chars[randomIndex];
+      }
+      return result;
+    }
+
+    function sendOTP() {
+      // Get the phone number input
+      const phoneInput = document.getElementById('phone');
+      const phone = phoneInput.value;
+
+      // Generate a 6-digit OTP
+      const otp = generateOTP(6);
+
+      // TODO: Send the OTP to the user's phone number using an SMS service provider
+
+      console.log(`OTP sent to ${phone}: ${otp}`);
+    }
+
+    function verifyOTP() {
+      // Get the OTP input
+      const otpInput = document.getElementById('otp');
+      const otp = otpInput.value;
+
+      // TODO: Verify the OTP entered by the user
+
+      // Generate a 6-digit OTP for testing purposes
+      const generatedOTP = generateOTP(6);
+
+      if (otpInput === generatedOTP) {
+        console.log('OTP verification successful');
+      } else {
+        console.log('OTP verification failed');
+      }
+    }
+  </script>
+</body>
+</html>
