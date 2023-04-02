@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background: cadetblue;
+}
+.container{
+    display: flex;
+    width: 40vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 100px;
+    background-color: aliceblue;
+    height: 70vh;
+}
+.left{
+    width: 18vw;
+    background-color: rgba(66, 220, 255, 0.774);
+    height: 70vh;
+    
+}
+.left span{
+  position: relative;
+ 
+ top: 200px;
+font-size: 40px;
+font-weight: 800;
+}
+form{
+    width: 25vw;
+
+    padding: 30px;
+    font-size: 18px;
+
+}
+form input{
+    width: 100%;
+    font-size: 19px;
+    margin: 5px;
+    border-radius: 5px;
+}
+button{
+    position: relative;
+   left: 30%;
+   font-weight:700;
+   color: aliceblue;
+   background-color: dodgerblue;
+   width: 80px;
+   cursor: pointer;
+   font-size: 15px;
+   border-radius: 5px;
+   border: 2px solid black;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+@media(max-width:1364px){
+    h2{
+        font-size: 18px;
+        display: inline-flex;
+        width: 20vw;
+    }
+    .container{
+        width:50vw;
+    }
+    form input{
+        width: 300px;
+        font-size: 15px;
+
+        
+    }
+    form{
+        left: 0;
+        width: 35vw;
+        font-size: 18px;
+    }
+
+.left{
+    width: 50%;
+    background-color: rgba(66, 220, 255, 0.774);
+    height: 70vh;
+    
+}
+}
+@media(max-width:1130px){
+
+}
+@media (max-width:1288px){
+    .left span{
+        font-size: 28px;
+        font-weight: 800;
+        margin: auto;
+    }
+    .left{
+        width: 100vw;
+        background-color: rgba(66, 220, 255, 0.774);
+        height: 70vh;
+        
+    }
+}
+
+/* @media(max-width:998px){
+    h2{
+        font-size: 10px;
+        display: inline-flex;
+        width: 20vw;
+    }
+    .container{
+        width: 80vw;
+      
+        overflow: hidden;
+       
+    }
+    form input{
+        width: 300px;
+        font-size: 20px;
+        
+    }
+    form{
+        width: 20vw;
+        font-size: 12px;
+    }
+    .left span{
+        position: relative;
+        left: 0;
+       top: 200px;
+      font-size: 15px;
+      font-weight: 1500;
+} 
+.left{
+    width: 35vw;
+    background-color: rgba(66, 220, 255, 0.774);
+    height: 70vh;
+    
+}
+} */
